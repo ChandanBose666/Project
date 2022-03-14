@@ -1,0 +1,47 @@
+Bouquet-
+1. Photo Gallery from here.(use LightBox)
+2. Social Icons from here. Use the animation
+3. Team Names from here
+4. About Us from Keyafe website.
+
+
+
+
+--------------------------------------------
+
+Conjugality-
+1. "Explore Now" section in the first page which will redirect to our e-commerce section of react
+from this site
+
+
+
+
+
+------------------------------------------------
+
+Elite Match-  
+1. Contact Us Form (take from this design)
+2. Border Button Design
+ 
+
+
+----------------------------------------------
+Nuptials-
+1. Footer from here
+
+---------------------------------------------
+
+Sections in our website
+
+1. Main top section  (Navbar- About Us, Gallery, Contact Us, Locate Us
+2. About Us
+3. Gallery
+4. Team
+5. Map   ||    Contact Us
+6. Testimonials
+7. Footer
+
+
+
+
+
