@@ -1,1 +1,29 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+:root {
+  --primarycolor: #ffffff;
+  --secondarycolor: #f40b2c;
+  --textcolor: #666;
+  --socialmediaicon: #444;
+}
+
+#top-section-container {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background: #e7281b;
+}
+
+.navbar-brand a {
+  color: cornsilk;
+  padding: 5px 8px;
+}
+
+.nav-item {
+  padding: 5px 8px;
+}
+
+.nav-link {
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */
