@@ -14,16 +14,167 @@
   background: #e7281b;
 }
 
-.navbar-brand a {
+.navbar .nav-link a {
+  color: white !important;
+}
+
+.navbar .navbar-brand a {
   color: cornsilk;
   padding: 5px 8px;
 }
 
-.nav-item {
+.navbar .nav-item {
   padding: 5px 8px;
 }
 
-.nav-link {
-  color: white;
+a {
+  text-decoration: none;
+}
+
+#hero-section .hero-wrapper {
+  background-image: url(../images/indian-bride-s-parents-hold-bowl-with-coconut-her-hands.jpg);
+  background-size: cover;
+  height: 750px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+
+#hero-section .hero-wrapper .e-commerce-div {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 999;
+  border-radius: 20%;
+  padding: 20px 20px;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.btn-container {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 999;
+  border-radius: 20%;
+  padding: 20px 20px;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.btn-container:nth-child(1) {
+  --btn-bg: #f40b2c;
+}
+
+.custom-primary-button {
+  background-color: #cc5262 !important;
+  --width: 180px;
+  --height: 60px;
+  border: 0;
+  position: relative;
+  min-width: var(--width);
+  min-height: var(--height);
+  border-radius: var(--height);
+  color: #fff;
+  font-family: "Montserrat";
+  font-weight: bold;
+  background: rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 1rem;
+}
+
+.custom-primary-button .text,
+.custom-primary-button .icon-container {
+  position: relative;
+  z-index: 2;
+}
+
+.custom-primary-button .icon-container {
+  --icon-size: 25px;
+  position: relative;
+  width: var(--icon-size);
+  height: var(--icon-size);
+  margin-left: 15px;
+  -webkit-transition: -webkit-transform 500ms ease;
+  transition: -webkit-transform 500ms ease;
+  transition: transform 500ms ease;
+  transition: transform 500ms ease, -webkit-transform 500ms ease;
+}
+
+.custom-primary-button .icon-container .icon {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: var(--icon-size);
+  height: var(--icon-size);
+  -webkit-transition: opacity 250ms ease, -webkit-transform 500ms ease;
+  transition: opacity 250ms ease, -webkit-transform 500ms ease;
+  transition: transform 500ms ease, opacity 250ms ease;
+  transition: transform 500ms ease, opacity 250ms ease, -webkit-transform 500ms ease;
+}
+
+.custom-primary-button .icon-container .icon--left {
+  -webkit-transform: translateX(-200%);
+          transform: translateX(-200%);
+  opacity: 0;
+}
+
+.custom-primary-button .icon-container .icon i {
+  width: 100%;
+  height: 100%;
+  fill: #fff;
+}
+
+.custom-primary-button::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--btn-bg);
+  border-radius: var(--height);
+  z-index: 1;
+  -webkit-transition: -webkit-transform 500ms ease;
+  transition: -webkit-transform 500ms ease;
+  transition: transform 500ms ease;
+  transition: transform 500ms ease, -webkit-transform 500ms ease;
+}
+
+.custom-primary-button:hover::after {
+  -webkit-transform: translateX(65%);
+          transform: translateX(65%);
+}
+
+.custom-primary-button:hover .icon-container {
+  -webkit-transform: translateX(125%);
+          transform: translateX(125%);
+}
+
+.custom-primary-button:hover .icon-container .icon--left {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  opacity: 1;
+}
+
+.custom-primary-button:hover .icon-container .icon--right {
+  -webkit-transform: translateX(200%);
+          transform: translateX(200%);
+  opacity: 0;
 }
 /*# sourceMappingURL=style.css.map */

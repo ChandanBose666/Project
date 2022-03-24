@@ -1,28 +1,159 @@
-:root{
-    --primarycolor: #ffffff;
-    --secondarycolor: #f40b2c;
-    --textcolor: #666;
-    --socialmediaicon: #444;
+:root {
+  --primarycolor: #ffffff;
+  --secondarycolor: #f40b2c;
+  --textcolor: #666;
+  --socialmediaicon: #444;
 }
 
-#top-section-container{
-    margin: 0;
-    padding: 0;
+#top-section-container {
+  margin: 0;
+  padding: 0;
 }
 
-.navbar{
-    background: rgb(231, 40, 27);
-}
-
-.navbar-brand a{
+.navbar {
+  background: rgb(231, 40, 27);
+  .nav-link a {
+    color: rgb(255, 255, 255) !important;
+  }
+  .navbar-brand a {
     color: cornsilk;
     padding: 5px 8px;
-}
-
-.nav-item{
+  }
+  .nav-item {
     padding: 5px 8px;
+  }
+}
+a {
+  text-decoration: none;
 }
 
-.nav-link{
-    color: rgb(255, 255, 255);
+#hero-section {
+  .hero-wrapper {
+    background-image: url(../images/indian-bride-s-parents-hold-bowl-with-coconut-her-hands.jpg);
+    background-size: cover;
+    height: 750px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+
+    .e-commerce-div {
+      position: absolute;
+      top: 70%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 999;
+      border-radius: 20%;
+      padding: 20px 20px;
+      font-size: 1.4rem;
+      font-weight: 600;
+    }
+  }
+}
+
+// Button Design
+
+.btn-container {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  border-radius: 20%;
+  padding: 20px 20px;
+  font-size: 1.4rem;
+  font-weight: 600;
+
+  &:nth-child(1) {
+    --btn-bg: #f40b2c;
+  }
+}
+
+.custom-primary-button {
+  background-color: #cc5262 !important;
+  --width: 180px;
+  --height: 60px;
+  border: 0;
+  position: relative;
+  min-width: var(--width);
+  min-height: var(--height);
+  border-radius: var(--height);
+  color: #fff;
+  font-family: "Montserrat";
+  font-weight: bold;
+  background: rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 1rem;
+
+  .text,
+  .icon-container {
+    position: relative;
+    z-index: 2;
+  }
+
+  .icon-container {
+    --icon-size: 25px;
+    position: relative;
+    width: var(--icon-size);
+    height: var(--icon-size);
+    margin-left: 15px;
+    transition: transform 500ms ease;
+
+    .icon {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: var(--icon-size);
+      height: var(--icon-size);
+      transition: transform 500ms ease, opacity 250ms ease;
+
+      &--left {
+        transform: translateX(-200%);
+        opacity: 0;
+      }
+
+      i {
+        width: 100%;
+        height: 100%;
+        fill: #fff;
+      }
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--btn-bg);
+    border-radius: var(--height);
+    z-index: 1;
+    transition: transform 500ms ease;
+  }
+
+  &:hover {
+    &::after {
+      transform: translateX(65%);
+    }
+
+    .icon-container {
+      transform: translateX(125%);
+      .icon {
+        &--left {
+          transform: translateX(0);
+          opacity: 1;
+        }
+        &--right {
+          transform: translateX(200%);
+          opacity: 0;
+        }
+      }
+    }
+  }
 }
